@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Brew Café</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #3e2723);
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffd54f;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Section */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Cards */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255,255,255,0.1);
+}
+
+.card h3 {
+    color: #ffd54f;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffab40;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ Velvet Brew</h1>
+    <p>Luxury Coffee Experience</p>
+</header>
+
+<nav>
+    <a href="#coffee">Coffee</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#starters">Starters</a>
+</nav>
+
+<section id="coffee">
+    <h2>Signature Coffee</h2>
+    <div class="menu">
+        <div class="card">
+            <h3>Espresso Royale</h3>
+            <p>Bold, intense premium roast</p>
+            <div class="price">₹180</div>
+        </div>
+        <div class="card">
+            <h3>Velvet Cappuccino</h3>
+            <p>Rich foam with smooth texture</p>
+            <div class="price">₹220</div>
+        </div>
+        <div class="card">
+            <h3>Caramel Latte</h3>
+            <p>Sweet caramel infused coffee</p>
+            <div class="price">₹260</div>
+        </div>
+    </div>
+</section>
+
+<section id="drinks">
+    <h2>Premium Drinks</h2>
+    <div class="menu">
+        <div class="card">
+            <h3>Iced Mocha Deluxe</h3>
+            <p>Chocolate & coffee fusion</p>
+            <div class="price">₹280</div>
+        </div>
+        <div class="card">
+            <h3>Berry Smoothie</h3>
+            <p>Fresh berries blended to perfection</p>
+            <div class="price">₹300</div>
+        </div>
+        <div class="card">
+            <h3>Mint Lemon Fizz</h3>
+            <p>Refreshing sparkling drink</p>
+            <div class="price">₹150</div>
+        </div>
+    </div>
+</section>
+
+<section id="starters">
+    <h2>Gourmet Starters</h2>
+    <div class="menu">
+        <div class="card">
+            <h3>Truffle Fries</h3>
+            <p>Crispy fries with truffle oil</p>
+            <div class="price">₹240</div>
+        </div>
+        <div class="card">
+            <h3>Cheese Garlic Bread</h3>
+            <p>Loaded with melted cheese</p>
+            <div class="price">₹220</div>
+        </div>
+        <div class="card">
+            <h3>Grilled Paneer Bites</h3>
+            <p>Spicy and smoky cubes</p>
+            <div class="price">₹260</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Velvet Brew Café | Crafted with elegance</p>
+</footer>
+
+</body>
+</html>

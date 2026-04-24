@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Stay Hotel</title>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+  header {
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    background: #2f3e4e;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero {
+    background: url('https://media-cdn.tripadvisor.com/media/photo-s/31/69/40/0d/atlantis-the-palm.jpg') no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+  }
+
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .room {
+    width: 280px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .room img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .room h3 {
+    padding: 10px;
+  }
+
+  .room p {
+    padding: 0 10px 15px;
+  }
+
+  .booking-form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .booking-form input, .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .booking-form button {
+    background: #1e2a38;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  footer {
+    background: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Grand Stay Hotel</h1>
+  <p>Luxury & Comfort Redefined</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#rooms">Rooms</a>
+  <a href="#booking">Booking</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to Your Perfect Stay</h1>
+</div>
+
+<div class="section" id="rooms">
+  <h2>Our Rooms</h2>
+  <div class="rooms">
+    <div class="room">
+      <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a">
+      <h3>Standard Room</h3>
+      <p>Comfortable stay at an affordable price</p>
+    </div>
+
+    <div class="room">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+      <h3>Deluxe Room</h3>
+      <p>Spacious rooms with premium facilities</p>
+    </div>
+
+    <div class="room">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+      <h3>Luxury Suite</h3>
+      <p>Experience top-level luxury and elegance</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="booking">
+    <a href="file:///C:/Users/sves02/Desktop/html/next.html"><button>Book Now</button></a>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@grandstay.com</p>
+  <p>Phone: +91 98765 43210</p>
+  <p>Location: Bangalore, India</p>
+</div>
+</body>
+</html>

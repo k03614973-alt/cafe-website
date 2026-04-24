@@ -1,2 +1,2 @@
 # cafe-website
-This is my first website. <br>njknkj
+HELLO!! <br>Welcome to my cafe.
